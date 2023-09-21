@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "t101",
+        "name": "Talking Doll",
+        "price": 123,
+        "labels": ["Doll", "Battery Powered", "Baby"],
+        "createdAt": 1631031801011,
+        "inStock": true
+      },
+      {
+        "_id": "t102",
+        "name": "Remote Control Car",
+        "price": 89.99,
+        "labels": ["Toy", "Battery Powered", "Kids"],
+        "createdAt": 1632031801011,
+        "inStock": true
+      },
+      {
+        "_id": "t103",
+        "name": "Puzzle Set",
+        "price": 19.99,
+        "labels": ["Toy", "Educational", "Kids"],
+        "createdAt": 1633031801011,
+        "inStock": true
+      }
+    
+]
