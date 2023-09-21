@@ -53,20 +53,33 @@ function remove(toyId) {
 
 }
 
+// function save(toy) {
+//     if (toy._id) {
+//         const toyToUpdate = gToys.find(currToy => currToy._id === toy._id)
+//         toyToUpdate.name = toy.name
+//         toyToUpdate.inStock = toy.inStock
+//         toyToUpdate.price = toy.price
+//         toyToUpdate.labels = toy.labels
+//     } else {
+//         toy._id = utilService._makeId()
+//         gToys.push(toy)
+//     }
+
+//     return _saveToysToFile().then(() => toy)
+//     // return Promise.resolve(toy)
+// }
+
 function save(toy) {
     if (toy._id) {
-        const toyToUpdate = gToys.find(currToy => currToy._id === toy._id)
-        toyToUpdate.name = toy.name
-        toyToUpdate.inStock = toy.inStock
-        toyToUpdate.price = toy.price
-        toyToUpdate.labels = toy.labels
+        const idx = gToys.findIndex(currToy => currToy._id === toy._id)
+        gToys[idx] = { ...gToys[idx], ...toy }
     } else {
-        toy._id = utilService._makeId()
-        gToys.push(toy)
+        toy.createdAt = Date.now();
+        toy._id = _makeId();
+        gToys.unshift(toy);
     }
-
-    return _saveToysToFile().then(() => toy)
-    // return Promise.resolve(toy)
+    _saveToysToFile();
+    return Promise.resolve(toy);
 }
 
 function _saveToysToFile() {
@@ -82,3 +95,14 @@ function _saveToysToFile() {
         });
     })
 }
+
+function _makeId(length = 5) {
+    var txt = '';
+    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (var i = 0; i < length; i++) {
+        txt += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return txt;
+}
+
+

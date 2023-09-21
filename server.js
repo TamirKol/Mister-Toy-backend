@@ -79,8 +79,8 @@ app.post('/api/toy', (req, res) => {
         price: +price
     }
     toyService.save(toy)
-        .then(savedCar => {
-            res.send(savedCar)
+        .then(savedToy => {
+            res.send(savedToy)
         })
         .catch(err => {
             loggerService.error('Cannot add toy', err)
@@ -96,11 +96,11 @@ app.put('/api/toy', (req, res) => {
         name,
         inStock,
         labels,
-        price: +price
+        price:+price
     }
-    toyService.save(toy, loggedinUser)
-        .then((savedCar) => {
-            res.send(savedCar)
+    toyService.save(toy)
+        .then((savedToy) => {
+            res.send(savedToy)
         })
         .catch(err => {
             loggerService.error('Cannot update toy', err)
