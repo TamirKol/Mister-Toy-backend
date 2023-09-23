@@ -1,53 +1,68 @@
 [
     {
-        "name": "Science Kit Doll",
-        "inStock": true,
-        "labels": [],
-        "price": 219,
-        "createdAt": 1695476384810,
-        "_id": "Ym64W"
-    },
-    {
-        "name": "Car Car",
-        "inStock": true,
-        "labels": [],
-        "price": 145,
-        "createdAt": 1695464692863,
-        "_id": "73HbR"
-    },
-    {
-        "name": "Doll begadol",
+        "name": "Robot Musical Instrument",
         "inStock": true,
         "labels": [
-            "Doll",
-            "Battery Powered",
-            "Baby"
+            "Remote Control",
+            "Science Kit",
+            "Play-Doh"
         ],
-        "price": 195,
-        "createdAt": 1695314614921,
-        "_id": "q3HBK"
+        "price": 199,
+        "createdAt": 1695491067716,
+        "_id": "oEHlY"
     },
     {
-        "name": "Teddy Bear Musical Instrument",
+        "name": "Puzzle Board ",
+        "inStock": "false",
+        "labels": [
+            "Play-Doh"
+        ],
+        "price": 320,
+        "createdAt": 1695491067343,
+        "_id": "4Dgft"
+    },
+    {
+        "name": "Baby",
         "inStock": true,
         "labels": [
-            "Doll",
-            "Battery Powered",
-            "Baby"
+            "Art Kit",
+            "Building Blocks"
         ],
-        "price": 111,
-        "createdAt": 1695314599833,
-        "_id": "KkfGN"
+        "price": 540,
+        "createdAt": 1695491064300,
+        "_id": "4ob9p"
     },
     {
-        "_id": "t101",
-        "name": "Talking Doll",
-        "price": 150,
+        "name": "Science Kit",
+        "inStock": true,
         "labels": [
-            "Doll",
-            "Baby"
+            "Playset",
+            "Action Figure",
+            "Educational",
+            "Science Kit"
         ],
-        "createdAt": 1631031801011,
-        "inStock": false
+        "price": 524,
+        "createdAt": 1695491064028,
+        "_id": "jTsXd"
+    },
+    {
+        "name": "Doll",
+        "inStock": true,
+        "labels": [
+            "Teddy Bear"
+        ],
+        "price": 321,
+        "createdAt": 1695491063708,
+        "_id": "6Xv4z"
+    },
+    {
+        "name": "Battery Powered Car",
+        "inStock": true,
+        "labels": [
+            "Stuffed Animal"
+        ],
+        "price": 501,
+        "createdAt": 1695491063222,
+        "_id": "Gfvgu"
     }
 ]
