@@ -114,5 +114,6 @@ app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
+const port =process.env.PORT||3030
 const PORT = 3030
-app.listen(PORT, () => console.log(`Server ready at port ${PORT}! http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Server ready at port ${port}! http://localhost:${port}`))
