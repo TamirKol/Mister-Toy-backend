@@ -11,6 +11,7 @@ export const toyService = {
 }
 
 function query(filterBy) {
+    console.log('my filter',filterBy);
 
     if (!filterBy) return Promise.resolve(gToys)
 
@@ -22,9 +23,9 @@ function query(filterBy) {
     }
     if (filterBy.inStock) {
         if (filterBy.inStock === "false") {
-            toyToDisplay = toyToDisplay.filter(toy => toy.inStock === 'false')
+            toyToDisplay = toyToDisplay.filter(toy => toy.inStock === false)
         } else {
-            toyToDisplay = toyToDisplay.filter(toy => toy.inStock === 'true')
+            toyToDisplay = toyToDisplay.filter(toy => toy.inStock === true)
         }
     }
     if (filterBy.labels && filterBy.labels.length > 0) {
@@ -33,7 +34,7 @@ function query(filterBy) {
         })
     }
 
-    return toyToDisplay
+    return Promise.resolve(toyToDisplay) 
 
 }
 

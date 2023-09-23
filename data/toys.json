@@ -1,16 +1,40 @@
 [
     {
-        "name": "Doll",
+        "name": "Science Kit Doll",
         "inStock": true,
         "labels": [],
-        "price": 746,
+        "price": 219,
+        "createdAt": 1695476384810,
+        "_id": "Ym64W"
+    },
+    {
+        "name": "Car Car",
+        "inStock": true,
+        "labels": [],
+        "price": 145,
+        "createdAt": 1695464692863,
+        "_id": "73HbR"
+    },
+    {
+        "name": "Doll begadol",
+        "inStock": true,
+        "labels": [
+            "Doll",
+            "Battery Powered",
+            "Baby"
+        ],
+        "price": 195,
         "createdAt": 1695314614921,
         "_id": "q3HBK"
     },
     {
         "name": "Teddy Bear Musical Instrument",
         "inStock": true,
-        "labels": [],
+        "labels": [
+            "Doll",
+            "Battery Powered",
+            "Baby"
+        ],
         "price": 111,
         "createdAt": 1695314599833,
         "_id": "KkfGN"
@@ -21,10 +45,9 @@
         "price": 150,
         "labels": [
             "Doll",
-            "Battery Powered",
             "Baby"
         ],
         "createdAt": 1631031801011,
-        "inStock": true
+        "inStock": false
     }
 ]
