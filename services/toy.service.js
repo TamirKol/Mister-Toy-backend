@@ -106,4 +106,8 @@ function _makeId(length = 5) {
     return txt;
 }
 
-
+/*const labelsCrit = labels.map((label) => ({
+    labels: label,
+}))
+criteria.$and = labelsCrit
+*/

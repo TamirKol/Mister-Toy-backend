@@ -8,8 +8,7 @@
             "Play-Doh"
         ],
         "price": 199,
-        "createdAt": 1695491067716,
-        "_id": "oEHlY"
+        "createdAt": 1695491067716
     },
     {
         "name": "Puzzle Board ",
@@ -18,8 +17,8 @@
             "Play-Doh"
         ],
         "price": 320,
-        "createdAt": 1695491067343,
-        "_id": "4Dgft"
+        "createdAt": 1695491067343
+      
     },
     {
         "name": "Baby",
@@ -29,8 +28,8 @@
             "Building Blocks"
         ],
         "price": 540,
-        "createdAt": 1695491064300,
-        "_id": "4ob9p"
+        "createdAt": 1695491064300
+       
     },
     {
         "name": "Science Kit",
@@ -42,8 +41,8 @@
             "Science Kit"
         ],
         "price": 524,
-        "createdAt": 1695491064028,
-        "_id": "jTsXd"
+        "createdAt": 1695491064028
+      
     },
     {
         "name": "Doll",
@@ -52,8 +51,8 @@
             "Teddy Bear"
         ],
         "price": 321,
-        "createdAt": 1695491063708,
-        "_id": "6Xv4z"
+        "createdAt": 1695491063708
+        
     },
     {
         "name": "Battery Powered Car",
@@ -62,7 +61,7 @@
             "Stuffed Animal"
         ],
         "price": 501,
-        "createdAt": 1695491063222,
-        "_id": "Gfvgu"
+        "createdAt": 1695491063222
+       
     }
 ]
