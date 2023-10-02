@@ -6,12 +6,16 @@ export async function getToys(req, res) {
     try {
         const filterBy = {
             txt: req.query.txt || '',
-            inStock:req.query.inStock||'',
-            labels:req.query.labels||''
+            inStock:req.query.inStock||null,
+            labels:req.query.labels||null
         }
-       
+        const sortBy =req.query.sortBy
+        ?{
+            [req.query.sortBy]:1
+        }
+        :{}
         loggerService.debug('Getting Toys', filterBy)
-        const toys = await toyService.query(filterBy)
+        const toys = await toyService.query(filterBy,sortBy)
         res.json(toys)
     } catch (err) {
         loggerService.error('Failed to get toys', err)

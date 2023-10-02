@@ -5,7 +5,7 @@ import { dbService } from '../../services/db.service.js'
 import { loggerService } from '../../services/logger.service.js'
 import { utilService } from '../../services/util.service.js'
 
-async function query(filterBy = { txt: '',inStock:true }) {
+async function query(filterBy ,sortBy) {
     try {
         const criteria = {};
 
@@ -24,7 +24,7 @@ async function query(filterBy = { txt: '',inStock:true }) {
             criteria.labels = { $in: filterBy.labels };
         }
         const collection = await dbService.getCollection('toy')
-        var toys = await collection.find(criteria).toArray()
+        var toys = await collection.find(criteria).sort(sortBy).toArray()
         return toys
     } catch (err) {
         loggerService.error('cannot find toys', err)
